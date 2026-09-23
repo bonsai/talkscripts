@@ -22,7 +22,7 @@ EXCLUDE = re.compile(r"(RUBRIC|PROMPT|INDEX|README)")
 
 
 def load_hall():
-    HALL = os.path.normpath(os.path.join(HERE, "..", "..", "scripts", "hall-eval.py"))
+    HALL = os.path.join(HERE, "hall-eval.py")
     spec = importlib.util.spec_from_file_location("hall_eval", HALL)
     mod = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(mod)

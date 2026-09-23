@@ -13,7 +13,7 @@ from __future__ import annotations
 import glob, os, re, statistics, sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-HALL = os.path.join(HERE, "..", "知恵の館")
+HALL = os.path.normpath(os.path.join(HERE, "..", "..", "知恵の館"))
 
 THEME = ["LLM","AI","人工知能","知能","情報","計算","モデル","データ","プログラム","Jev",
          "哲学","思想","仏教","龍樹","SF","文学","小説","言語","記号","読む","本","図書館",

@@ -1,7 +1,7 @@
 # 知恵の館 執筆プロンプト（web ChatGPT 用）
 
 > そのまま ChatGPT に貼る。`【今回のテーマ】` の3行だけ差し替える。
-> 出力をそのまま `知恵の館/#NN-<slug>.md` に貼り、`scripts/hall-eval.py --check` で検査する。
+> 出力をそのまま `知恵の館/#NN-<slug>.md` に貼り、`.github/workflows/hall-eval.py --check` で検査する。
 
 ---
 
@@ -71,6 +71,6 @@ notes: <口調・形式のメモ。例: 記号を避けた読み上げ向き>
 ---
 
 ## 使い方メモ
-- 生成した原稿は `知恵の館/#NN-<slug>.md` に保存 → `python3 scripts/hall-eval.py --check <file>` で自動検査（締め/朗読/構造/テーマ）。
+- 生成した原稿は `知恵の館/#NN-<slug>.md` に保存 → `python3 .github/workflows/hall-eval.py --check <file>` で自動検査（締め/朗読/構造/テーマ）。
 - seed（種）からの改稿にも使える: 上記 `【今回のテーマ】` に `seed/<file>` の題材を要約して渡す。
 - 出来が良ければ `知恵の館/` に昇格、微妙なら seed（床）に残す。

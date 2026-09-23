@@ -14,7 +14,7 @@ talkscripts/
 ├── SF落語/               ← 完成品（シリーズ: SF 落語）
 ├── RUBRIC.md             ← 評価軸（9軸・全シリーズ共通）
 ├── SERIES.md             ← シリーズ台帳（folder / 形式 / 尺 / 命名）
-├── scripts/hall-eval.py  ← 評価器（一次スクリーニング）
+├── .github/workflows/hall-eval.py  ← 評価器（一次スクリーニング）
 └── README.md
 ```
 
@@ -34,7 +34,7 @@ seed/（査読前・種）
 - 査読前はすべて `seed/` に集約する（直下には置かない）。
 - 査読は **PR** で行う。PR 本文に **台本の全文**を貼り、ファイルを開かずに読めるようにする。
 - **merge = 完成フォルダ `<series>/` への登録**（PR の差分は `<series>/#NN-….md` を追加する形にする）。
-- 評価は共通の [`RUBRIC.md`](RUBRIC.md) の 9 軸＋`scripts/hall-eval.py`。不合格は `seed/` に残す（捨てない）。
+- 評価は共通の [`RUBRIC.md`](RUBRIC.md) の 9 軸＋`.github/workflows/hall-eval.py`。不合格は `seed/` に残す（捨てない）。
 
 ## 知恵の館 — House of Wisdom
 
@@ -47,6 +47,7 @@ SF・人工知能・哲学・思想・構想を、テキストから朗読動画
 | #03 | ヌルの庭で待つ — 仏教と落合陽一と量子の徒然 |
 
 - プレイリスト: https://www.youtube.com/playlist?list=PLIZsapbAHEaE
+- シリーズ台帳: [`SERIES.md`](SERIES.md)
 - 査読前（種）: `seed/`（索引 `seed/INDEX.md`）
-- 完成品: `知恵の館/#NN-….md`
-- 評価: `知恵の館/RUBRIC.md` / `scripts/hall-eval.py`
+- 完成品: `<series>/#NN-….md`（例 `知恵の館/#NN-….md`）
+- 評価: [`RUBRIC.md`](RUBRIC.md) / `.github/workflows/hall-eval.py`

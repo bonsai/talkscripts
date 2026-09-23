@@ -1,7 +1,7 @@
 # seed — エッセイ原稿（種）
 
 `talkscripts/seed/` = 台本の種。ローカル(llm-wiki)は cp、gh repo は link。
-スコアは **RUBRIC v2**（`scripts/hall-eval.py`、完成品で自動校正）。
+スコアは **RUBRIC v2**（`.github/workflows/hall-eval.py`、完成品で自動校正）。
 
 ## ローカル seed（cp, llm-wiki 由来）
 

@@ -56,7 +56,7 @@ seed（種）─ 一次スクリーニング(score) ─ 評価軸で人手/LLM�
 
 ## 5. RUBRIC v2 — 密度ベース自動校正（2026-09-24）
 
-完成品を基準に**自動校正**する評価器 `scripts/hall-eval.py` を実装。
+完成品を基準に**自動校正**する評価器 `.github/workflows/hall-eval.py` を実装。
 
 - 頻度は「**1000字あたり密度**」で見る（短い佳品を過小評価しない）。
 - 校正: 各密度軸は**完成品の中央値=4.0** になるようスケール（topic/conn/voice/insight/motif）。
@@ -73,8 +73,8 @@ seed（種）─ 一次スクリーニング(score) ─ 評価軸で人手/LLM�
 
 ### 使い方
 ```bash
-scripts/hall-eval.py 知恵の館/#0*.md      # 採点
-scripts/hall-eval.py --dir seed           # seed を降順採点
-scripts/hall-eval.py --axis <file.md>     # 軸内訳
-scripts/hall-eval.py --check <file.md>    # 台本チェック（締め/朗読/構造/テーマ）
+.github/workflows/hall-eval.py 知恵の館/#0*.md      # 採点
+.github/workflows/hall-eval.py --dir seed           # seed を降順採点
+.github/workflows/hall-eval.py --axis <file.md>     # 軸内訳
+.github/workflows/hall-eval.py --check <file.md>    # 台本チェック（締め/朗読/構造/テーマ）
 ```

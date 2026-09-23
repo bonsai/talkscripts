@@ -10,7 +10,7 @@ on:
   pull_request:
     paths:
       - "知恵の館/**.md"
-      - "scripts/hall-eval.py"
+      - ".github/workflows/hall-eval.py"
       - ".github/workflows/pr-gate.py"
   workflow_dispatch:
 
