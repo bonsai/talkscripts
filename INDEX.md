@@ -7,7 +7,7 @@ tags: [talkscripts, 知恵の館, 朗読, candidate]
 
 # 知恵の館 — 朗読原稿候補
 
-候補 24 件（元: `knowledge/raw/untracked/2026/09/`）。台本化するものを `../texts/` へ #NN で昇格。
+候補 24 件（元: `knowledge/raw/untracked/2026/09/`）。台本化するものを `#NN-<slug>.md` として**直下へ昇格**（フラット）。
 
 | 種別 | ファイル | 字数 |
 |------|----------|------|
@@ -36,7 +36,7 @@ tags: [talkscripts, 知恵の館, 朗読, candidate]
 | SS | `shortstory-itsumo-no-asa-20260825.md` | 839 |
 | SS | `shortstory-matsu-hitotachi-20260825.md` | 669 |
 
-## 昇格済み（texts/）
+## 昇格済み（直下・#NN）
 
 - #01 entropy-shannon-llm-jev
 - #02 borges-library-llm-reading
