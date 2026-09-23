@@ -76,7 +76,7 @@ def evaluate(path, REF):
         REF_KEY = REF[key]
         a[key] = round(dens(sum(t.count(w) for w in words)), 2)
     # 構造
-    secs = len([l for l in lines if l.startswith("## ") or re.match(r"^\s*\d+\.\s", l)])
+    secs = len([l for l in lines if l.startswith("## ") or re.match(r"^\s*\d+\.\s", l) or re.match(r"^(第[一二三四五六七八九十]+[信章手記]|はしがき|序|結び)", l)])
     paras = len([p for p in re.split(r"\n\s*\n|^---$", t, flags=re.M) if len(p.strip()) > 60])
     a["struct"] = round(min(5.0, secs + min(3, paras / 5)), 2)
     # 締めの余韻
