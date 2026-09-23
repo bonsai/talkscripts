@@ -20,7 +20,14 @@ THEME = ["LLM","AI","人工知能","知能","情報","計算","モデル","デ�
          "人生","無限","選択","記憶","言葉","知恵","構想"]
 PROPER = ["シャノン","ボルヘス","ナーガールジュナ","龍樹","落合陽一","チューリング",
           "ウィトゲンシュタイン","ゲーデル","フォン・ノイマン","Jevons","ジュヴォンズ",
+<<<<<<< Updated upstream
           "ソシュール","パース","エラトステネス","バベルの図書館","フッサール"]
+=======
+          "ソシュール","パース","エラトステネス","バベルの図書館","フッサール",
+          "太宰治","太宰","人間失格","AI失格",
+          "川端康成","雪国","駒子","国境のトンネル",
+          "人工無脳","イライザ","オウム返し","イライザの子孫"]
+>>>>>>> Stashed changes
 VOICE = ["私は","私たち","だろう","のだ","と思う","思う","かもしれない","でよい","では",
          "見える","気がする","正直","ひそかに","けさ"]
 INSIGHT = ["逆説","パラドックス","ではなく","むしろ","言い換えれば","実は","だが","しかし",
@@ -74,7 +81,7 @@ def evaluate(path, REF):
         REF_KEY = REF[key]
         a[key] = round(dens(sum(t.count(w) for w in words)), 2)
     # 構造
-    secs = len([l for l in lines if l.startswith("## ") or re.match(r"^\s*\d+\.\s", l)])
+    secs = len([l for l in lines if l.startswith("## ") or re.match(r"^\s*\d+\.\s", l) or re.match(r"^(第[一二三四五六七八九十]+[信章手記]|はしがき|序|結び)", l)])
     paras = len([p for p in re.split(r"\n\s*\n|^---$", t, flags=re.M) if len(p.strip()) > 60])
     a["struct"] = round(min(5.0, secs + min(3, paras / 5)), 2)
     # 締めの余韻
