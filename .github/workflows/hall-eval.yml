@@ -11,7 +11,7 @@ on:
     paths:
       - "知恵の館/**.md"
       - "scripts/hall-eval.py"
-      - "scripts/pr-gate.py"
+      - ".github/workflows/pr-gate.py"
   workflow_dispatch:
 
 permissions:
@@ -46,7 +46,7 @@ jobs:
       - name: 1次判定 (hall-eval)
         id: gate
         if: steps.files.outputs.files != ''
-        run: python3 scripts/pr-gate.py ${{ steps.files.outputs.files }}
+        run: python3 .github/workflows/pr-gate.py ${{ steps.files.outputs.files }}
 
       - name: 判定をPRにコメント
         if: always() && steps.files.outputs.files != ''
