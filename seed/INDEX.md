@@ -1,30 +1,31 @@
 # seed — エッセイ原稿（種）
 
 `talkscripts/seed/` = 台本の種。ローカル(llm-wiki)は cp、gh repo は link。
+スコアは **RUBRIC v2**（`scripts/hall-eval.py`、完成品で自動校正）。
 
 ## ローカル seed（cp, llm-wiki 由来）
 
-| score | chars | kw | ファイル |
-|------:|------:|---:|----------|
-| 100 | 4009 | 73 | `09-entropy-shannon-llm-jev-essay-20260924.md` |
-| 100 | 3355 | 67 | `09-jev-redundancy-uncertainty-essay-20260924.md` |
-| 100 | 2659 | 8 | `09-null-nagarjuna-ochiai-essay-20260924.md` |
-| 93.0 | 1219 | 9 | `09-embed-layer-essay-20260924.md` |
-| 90.5 | 2389 | 18 | `jev-semgrep-essay.md` |
-| 85.8 | 1636 | 12 | `sf_translation_essay.md` |
-| 84.0 | 1819 | 9 | `furui-essay.md` |
-| 83.7 | 966 | 6 | `09-borges-library-llm-reading-essay-20260924.md` |
-| 83.0 | 1031 | 1 | `essay-2027-test-tsonan-blade-essay.md` |
-| 83.0 | 1021 | 1 | `essay-tsonan_blade_essay.md` |
-| 82.0 | 2337 | 1 | `package_manager_essay.md` |
-| 82.0 | 1280 | 1 | `essay-mistake.md` |
-| 74.0 | 1074 | 0 | `essay-essay.md` |
-| 65.7 | 455 | 6 | `essay-essay_2_jp.md` |
-| 62.4 | 478 | 3 | `essay-essay_1_jp.md` |
-| 58.5 | 839 | 2 | `essay-essay_1_en.md` |
-| 55.0 | 398 | 0 | `essay-essay_2_ch.md` |
-| 50.0 | 902 | 0 | `essay-essay_2_en.md` |
-| 43.5 | 422 | 2 | `essay-essay_1_ch.md` |
+| score | chars | ファイル | タイトル |
+|------:|------:|----------|----------|
+| 86.8 | 966 | `09-borges-library-llm-reading-essay-20260924` | ぜんぶは読めない。では、何を読むか — ボルヘス、図書館、L |
+| 79.9 | 3355 | `09-jev-redundancy-uncertainty-essay-20260924` | 冗長さを捨て、不確実性を数字にする — Jev 論 |
+| 79.7 | 1819 | `furui-essay.md` | 篩は言葉を振るう — エラトステネスから furui へ |
+| 77.3 | 4009 | `09-entropy-shannon-llm-jev-essay-20260924.md` | エントロピーを閉じる — シャノン、LLM、Jev |
+| 72.8 | 455 | `essay-essay_2_jp.md` | 決定論の終焉と、流動的な計算の夜明け |
+| 69.9 | 1636 | `sf_translation_essay.md` | SF 小説の醍醐味は翻訳語の大胆さにあった |
+| 65.7 | 1219 | `09-embed-layer-essay-20260924.md` | 貯める世界から、結ぶ世界へ — embed-layer の前 |
+| 65.6 | 2659 | `09-null-nagarjuna-ochiai-essay-20260924.md` | ヌルの庭で待つ — 仏教と落合陽一と量子の徒然 |
+| 65.2 | 1074 | `essay-essay.md` | 仕事の言葉、七つの器 — 2027年、熟年プログラマの回想 |
+| 61.1 | 2389 | `jev-semgrep-essay.md` | 意味で grep する — Jev semgrep を解剖す |
+| 54.7 | 1021 | `essay-tsonan_blade_essay.md` | データ形式の六つの季節 — 2027年、熟年プログラマの回想 |
+| 54.6 | 1031 | `essay-2027-test-tsonan-blade-essay.md` | データ形式の六つの季節 — 2027年、熟年プログラマの回想 |
+| 51.4 | 478 | `essay-essay_1_jp.md` | Jade can Envision: 結晶化する意志と、動的 |
+| 45.9 | 1280 | `essay-mistake.md` | 間違いの値打ち — 熟年プログラマの回想 |
+| 38.2 | 2337 | `package_manager_essay.md` | winget / choco / scoop / APT — |
+| 31.5 | 398 | `essay-essay_2_ch.md` | 确定论的终结与流体计算的黎明 |
+| 30.0 | 422 | `essay-essay_1_ch.md` | Jade 的愿景：结晶化的意志与动态秩序的地平线 |
+| 30.0 | 902 | `essay-essay_2_en.md` | The End of Determinism and the |
+| 28.5 | 839 | `essay-essay_1_en.md` | Jade can Envision: Crystallize |
 
 ## リモート seed（link, gh repo 由来）
 
