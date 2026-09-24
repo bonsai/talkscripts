@@ -1,31 +1,64 @@
 # seed — エッセイ原稿（種）
 
-`talkscripts/seed/` = 台本の種。ローカル(llm-wiki)は cp、gh repo は link。
+`talkscripts/seed/` = 台本の種。ローカル (llm-wiki) は cp、gh repo は link。
 スコアは **RUBRIC v2**（`.github/workflows/hall-eval.py`、完成品で自動校正）。
 
-## ローカル seed（cp, llm-wiki 由来）
+```
+seed/
+├── essay/          ← エッセイ原稿（知恵の館 / SF シリーズの種）
+├── shortstory/     ← 掌編 SF（SF ショートショート / SF 落語の種）
+├── conversation/   ← 親子対話シリーズ
+└── misc/           ← 設計メモ・概念種
+```
+
+## essay — エッセイ（知恵の館など）
 
 | score | chars | ファイル | タイトル |
 |------:|------:|----------|----------|
-| 86.8 | 966 | `09-borges-library-llm-reading-essay-20260924` | ぜんぶは読めない。では、何を読むか — ボルヘス、図書館、L |
-| 79.9 | 3355 | `09-jev-redundancy-uncertainty-essay-20260924` | 冗長さを捨て、不確実性を数字にする — Jev 論 |
-| 79.7 | 1819 | `furui-essay.md` | 篩は言葉を振るう — エラトステネスから furui へ |
-| 77.3 | 4009 | `09-entropy-shannon-llm-jev-essay-20260924.md` | エントロピーを閉じる — シャノン、LLM、Jev |
-| 72.8 | 455 | `essay-essay_2_jp.md` | 決定論の終焉と、流動的な計算の夜明け |
-| 69.9 | 1636 | `sf_translation_essay.md` | SF 小説の醍醐味は翻訳語の大胆さにあった |
-| 65.7 | 1219 | `09-embed-layer-essay-20260924.md` | 貯める世界から、結ぶ世界へ — embed-layer の前 |
-| 65.6 | 2659 | `09-null-nagarjuna-ochiai-essay-20260924.md` | ヌルの庭で待つ — 仏教と落合陽一と量子の徒然 |
-| 65.2 | 1074 | `essay-essay.md` | 仕事の言葉、七つの器 — 2027年、熟年プログラマの回想 |
-| 61.1 | 2389 | `jev-semgrep-essay.md` | 意味で grep する — Jev semgrep を解剖す |
-| 54.7 | 1021 | `essay-tsonan_blade_essay.md` | データ形式の六つの季節 — 2027年、熟年プログラマの回想 |
-| 54.6 | 1031 | `essay-2027-test-tsonan-blade-essay.md` | データ形式の六つの季節 — 2027年、熟年プログラマの回想 |
-| 51.4 | 478 | `essay-essay_1_jp.md` | Jade can Envision: 結晶化する意志と、動的 |
-| 45.9 | 1280 | `essay-mistake.md` | 間違いの値打ち — 熟年プログラマの回想 |
-| 38.2 | 2337 | `package_manager_essay.md` | winget / choco / scoop / APT — |
-| 31.5 | 398 | `essay-essay_2_ch.md` | 确定论的终结与流体计算的黎明 |
-| 30.0 | 422 | `essay-essay_1_ch.md` | Jade 的愿景：结晶化的意志与动态秩序的地平线 |
-| 30.0 | 902 | `essay-essay_2_en.md` | The End of Determinism and the |
-| 28.5 | 839 | `essay-essay_1_en.md` | Jade can Envision: Crystallize |
+| 86.8 | 966 | `essay/09-borges-library-llm-reading-essay-20260924.md` | ぜんぶは読めない。では、何を読むか — ボルヘス、図書館、L |
+| 79.9 | 3355 | `essay/09-jev-redundancy-uncertainty-essay-20260924.md` | 冗長さを捨て、不確実性を数字にする — Jev 論 |
+| 79.7 | 1819 | `essay/furui-essay.md` | 篩は言葉を振るう — エラトステネスから furui へ |
+| 77.3 | 4009 | `essay/09-entropy-shannon-llm-jev-essay-20260924.md` | エントロピーを閉じる — シャノン、LLM、Jev |
+| 72.8 | 455 | `essay/essay-essay_2_jp.md` | 決定論の終焉と、流動的な計算の夜明け |
+| 69.9 | 1636 | `essay/sf_translation_essay.md` | SF 小説の醍醐味は翻訳語の大胆さにあった |
+| 65.7 | 1219 | `essay/09-embed-layer-essay-20260924.md` | 貯める世界から、結ぶ世界へ — embed-layer の前 |
+| 65.6 | 2659 | `essay/09-null-nagarjuna-ochiai-essay-20260924.md` | ヌルの庭で待つ — 仏教と落合陽一と量子の徒然 |
+| 65.2 | 1074 | `essay/essay-essay.md` | 仕事の言葉、七つの器 — 2027 年、熟年プログラマの回想 |
+| 61.1 | 2389 | `essay/jev-semgrep-essay.md` | 意味で grep する — Jev semgrep を解剖す |
+| 54.7 | 1021 | `essay/essay-tsonan_blade_essay.md` | データ形式の六つの季節 — 2027 年、熟年プログラマの回想 |
+| 54.6 | 1031 | `essay/essay-2027-test-tsonan-blade-essay.md` | データ形式の六つの季節 — 2027 年、熟年プログラマの回想 |
+| 51.4 | 478 | `essay/essay-essay_1_jp.md` | Jade can Envision: 結晶化する意志と、動的 |
+| 45.9 | 1280 | `essay/essay-mistake.md` | 間違いの値打ち — 熟年プログラマの回想 |
+| 38.2 | 2337 | `essay/package_manager_essay.md` | winget / choco / scoop / APT — |
+| 31.5 | 398 | `essay/essay-essay_2_ch.md` | 确定论的终结与流体计算的黎明 |
+| 30.0 | 422 | `essay/essay-essay_1_ch.md` | Jade 的愿景：结晶化的意志与动态秩序的地平线 |
+| 30.0 | 902 | `essay/essay-essay_2_en.md` | The End of Determinism and the |
+| 28.5 | 839 | `essay/essay-essay_1_en.md` | Jade can Envision: Crystallize |
+
+## shortstory — 掌編 SF（SF ショートショート / SF 落語）
+
+| ファイル | タイトル |
+|----------|----------|
+| `shortstory/pi-overview-shortstory-20260822.md` | pi overview short story |
+| `shortstory/shortstory-alignment-20260825.md` | alignment short story |
+| `shortstory/shortstory-green-20260825.md` | green short story |
+| `shortstory/shortstory-itsumo-no-asa-20260825.md` | いつものおはよう |
+| `shortstory/shortstory-matsu-hitotachi-20260825.md` | 待つ人々 |
+
+## conversation — 親子対話
+
+| ファイル | タイトル |
+|----------|----------|
+| `conversation/親子対話_CRXインストール失敗談_20260919.md` | CRX インストール失敗談 |
+| `conversation/親子対話_CRXインストール戦記_話2_UIP_20260919.md` | CRX インストール戦記 話 2：UIP |
+| `conversation/親子対話_CRXインストール戦記_話3_永続化_20260920.md` | CRX インストール戦記 話 3：永続化 |
+| `conversation/親子対話_八岐の大蛇_Pythonで書くべきか_20260920.md` | 八岐の大蛇：Python で書くべきか |
+
+## misc — 設計メモ・概念種
+
+| ファイル | タイトル |
+|----------|----------|
+| `misc/repo-neta-agent.md` | neta harvesting agent concept |
 
 ## リモート seed（link, gh repo 由来）
 
@@ -59,4 +92,3 @@
 - [bonsai/idol-lab :: theory/不揃いのアイドル.md](https://github.com/bonsai/idol-lab/blob/HEAD/theory/不揃いのアイドル.md)
 - [bonsai/idol-portal :: index.html](https://github.com/bonsai/idol-portal/blob/HEAD/index.html)
 - [bonsai/wiki :: REORGANIZE.md](https://github.com/bonsai/wiki/blob/HEAD/REORGANIZE.md)
-
