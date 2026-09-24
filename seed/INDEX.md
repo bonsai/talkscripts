@@ -1,41 +1,70 @@
-# seed — エッセイ原稿（種）
+# seed — 原稿の種
 
 `talkscripts/seed/` = 台本の種。ローカル (llm-wiki) は cp、gh repo は link。
-スコアは **RUBRIC v2**（`.github/workflows/hall-eval.py`、完成品で自動校正）。
+スコアは **RUBRIC v2**（`.github/workflows/hall-eval.py`、完成品で自動校正）
 
 ```
 seed/
-├── essay/          ← エッセイ原稿（知恵の館 / SF シリーズの種）
-├── shortstory/     ← 掌編 SF（SF ショートショート / SF 落語の種）
-├── conversation/   ← 親子対話シリーズ
-└── misc/           ← 設計メモ・概念種
+├── philosophy/       ← 仏教・量子・空・ヌル
+├── info-theory/      ← シャノン・エントロピー・情報理論
+├── ai-tech/          ← AI 技術・embed-layer・読書
+├── jev/              ← Jev・決定エンジン・semgrep
+├── 2027-series/      ← 熟年プログラマ回想・Jade
+├── misc-essay/       ← 篩・パッケージマネージャ・SF 翻訳・データ形式
+├── shortstory/       ← 掌編 SF
+├── conversation/     ← 親子対話
+└── notes/            ← 設計メモ・概念種
 ```
 
-## essay — エッセイ（知恵の館など）
+## philosophy — 仏教・量子・空
+
+| ファイル | タイトル |
+|----------|----------|
+| `philosophy/09-null-nagarjuna-ochiai-essay-20260924.md` | ヌルの庭で待つ — 仏教と落合陽一と量子の徒然 |
+
+## info-theory — シャノン・エントロピー
 
 | score | chars | ファイル | タイトル |
 |------:|------:|----------|----------|
-| 86.8 | 966 | `essay/09-borges-library-llm-reading-essay-20260924.md` | ぜんぶは読めない。では、何を読むか — ボルヘス、図書館、L |
-| 79.9 | 3355 | `essay/09-jev-redundancy-uncertainty-essay-20260924.md` | 冗長さを捨て、不確実性を数字にする — Jev 論 |
-| 79.7 | 1819 | `essay/furui-essay.md` | 篩は言葉を振るう — エラトステネスから furui へ |
-| 77.3 | 4009 | `essay/09-entropy-shannon-llm-jev-essay-20260924.md` | エントロピーを閉じる — シャノン、LLM、Jev |
-| 72.8 | 455 | `essay/essay-essay_2_jp.md` | 決定論の終焉と、流動的な計算の夜明け |
-| 69.9 | 1636 | `essay/sf_translation_essay.md` | SF 小説の醍醐味は翻訳語の大胆さにあった |
-| 65.7 | 1219 | `essay/09-embed-layer-essay-20260924.md` | 貯める世界から、結ぶ世界へ — embed-layer の前 |
-| 65.6 | 2659 | `essay/09-null-nagarjuna-ochiai-essay-20260924.md` | ヌルの庭で待つ — 仏教と落合陽一と量子の徒然 |
-| 65.2 | 1074 | `essay/essay-essay.md` | 仕事の言葉、七つの器 — 2027 年、熟年プログラマの回想 |
-| 61.1 | 2389 | `essay/jev-semgrep-essay.md` | 意味で grep する — Jev semgrep を解剖す |
-| 54.7 | 1021 | `essay/essay-tsonan_blade_essay.md` | データ形式の六つの季節 — 2027 年、熟年プログラマの回想 |
-| 54.6 | 1031 | `essay/essay-2027-test-tsonan-blade-essay.md` | データ形式の六つの季節 — 2027 年、熟年プログラマの回想 |
-| 51.4 | 478 | `essay/essay-essay_1_jp.md` | Jade can Envision: 結晶化する意志と、動的 |
-| 45.9 | 1280 | `essay/essay-mistake.md` | 間違いの値打ち — 熟年プログラマの回想 |
-| 38.2 | 2337 | `essay/package_manager_essay.md` | winget / choco / scoop / APT — |
-| 31.5 | 398 | `essay/essay-essay_2_ch.md` | 确定论的终结与流体计算的黎明 |
-| 30.0 | 422 | `essay/essay-essay_1_ch.md` | Jade 的愿景：结晶化的意志与动态秩序的地平线 |
-| 30.0 | 902 | `essay/essay-essay_2_en.md` | The End of Determinism and the |
-| 28.5 | 839 | `essay/essay-essay_1_en.md` | Jade can Envision: Crystallize |
+| 77.3 | 4009 | `info-theory/09-entropy-shannon-llm-jev-essay-20260924.md` | エントロピーを閉じる — シャノン、LLM、Jev |
 
-## shortstory — 掌編 SF（SF ショートショート / SF 落語）
+## ai-tech — AI 技術・読書
+
+| score | chars | ファイル | タイトル |
+|------:|------:|----------|----------|
+| 86.8 | 966 | `ai-tech/09-borges-library-llm-reading-essay-20260924.md` | ぜんぶは読めない。では、何を読むか — ボルヘス、図書館、L |
+| 65.7 | 1219 | `ai-tech/09-embed-layer-essay-20260924.md` | 貯める世界から、結ぶ世界へ — embed-layer の前 |
+
+## jev — Jev・決定エンジン
+
+| score | chars | ファイル | タイトル |
+|------:|------:|----------|----------|
+| 79.9 | 3355 | `jev/09-jev-redundancy-uncertainty-essay-20260924.md` | 冗長さを捨て、不確実性を数字にする — Jev 論 |
+| 61.1 | 2389 | `jev/jev-semgrep-essay.md` | 意味で grep する — Jev semgrep を解剖す |
+
+## 2027-series — 熟年プログラマ回想・Jade
+
+| score | chars | ファイル | タイトル |
+|------:|------:|----------|----------|
+| 65.2 | 1074 | `2027-series/essay-essay.md` | 仕事の言葉、七つの器 — 2027 年、熟年プログラマの回想 |
+| 54.7 | 1021 | `2027-series/essay-tsonan_blade_essay.md` | データ形式の六つの季節 — 2027 年、熟年プログラマの回想 |
+| 54.6 | 1031 | `2027-series/essay-2027-test-tsonan-blade-essay.md` | データ形式の六つの季節 — 2027 年、熟年プログラマの回想 |
+| 51.4 | 478 | `2027-series/essay-essay_1_jp.md` | Jade can Envision: 結晶化する意志と、動的 |
+| 45.9 | 1280 | `2027-series/essay-mistake.md` | 間違いの値打ち — 熟年プログラマの回想 |
+| 31.5 | 398 | `2027-series/essay-essay_2_ch.md` | 確定論的終焉と流体計算の夜明け |
+| 30.0 | 422 | `2027-series/essay-essay_1_ch.md` | Jade の愿景：結晶化する意志と動的秩序 |
+| 30.0 | 902 | `2027-series/essay-essay_2_en.md` | The End of Determinism and the |
+| 28.5 | 839 | `2027-series/essay-essay_1_en.md` | Jade can Envision: Crystallize |
+
+## misc-essay — その他エッセイ
+
+| score | chars | ファイル | タイトル |
+|------:|------:|----------|----------|
+| 79.7 | 1819 | `misc-essay/furui-essay.md` | 篩は言葉を振るう — エラトステネスから furui へ |
+| 69.9 | 1636 | `misc-essay/sf_translation_essay.md` | SF 小説の醍醐味は翻訳語の大胆さにあった |
+| 38.2 | 2337 | `misc-essay/package_manager_essay.md` | winget / choco / scoop / APT |
+
+## shortstory — 掌編 SF
 
 | ファイル | タイトル |
 |----------|----------|
@@ -54,11 +83,11 @@ seed/
 | `conversation/親子対話_CRXインストール戦記_話3_永続化_20260920.md` | CRX インストール戦記 話 3：永続化 |
 | `conversation/親子対話_八岐の大蛇_Pythonで書くべきか_20260920.md` | 八岐の大蛇：Python で書くべきか |
 
-## misc — 設計メモ・概念種
+## notes — 設計メモ・概念種
 
 | ファイル | タイトル |
 |----------|----------|
-| `misc/repo-neta-agent.md` | neta harvesting agent concept |
+| `notes/repo-neta-agent.md` | Repo Neta Agent — 全 repo からネタを拾う |
 
 ## リモート seed（link, gh repo 由来）
 
