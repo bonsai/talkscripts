@@ -5,6 +5,8 @@ intent: 生成物の棚卸しと評価を定期レポート(issue)にし、昇�
 on:
   schedule: daily
   workflow_dispatch:
+engine:
+  id: codex
 permissions:
   contents: read
   issues: read
