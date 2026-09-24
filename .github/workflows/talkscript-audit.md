@@ -7,6 +7,14 @@ on:
   workflow_dispatch:
 engine:
   id: codex
+  model: gpt-oss-120b
+  env:
+    OPENAI_BASE_URL: https://api.ai.sakura.ad.jp/v1
+    OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+network:
+  allowed:
+    - defaults
+    - api.ai.sakura.ad.jp
 permissions:
   contents: read
   issues: read
